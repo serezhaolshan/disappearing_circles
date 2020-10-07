@@ -1,9 +1,11 @@
-document.getElementById("red-circle").onclick = () => {
-    document.getElementById("red-circle").style.display = "none";
-};
-document.getElementById("yellow-circle").onclick = () => {
-    document.getElementById("yellow-circle").style.display = "none";
-};
-document.getElementById("blue-circle").onclick = () => {
-    document.getElementById("blue-circle").style.display = "none";
+document.getElementById("check").onclick = () => {
+    let fingersEntered = document.getElementById("text").value;
+    let fingerCount = Math.floor(Math.random() * 6);
+    if(fingersEntered == fingerCount){
+        alert("You got it!");
+    }
+    else {
+        alert(`Nope! The number was ${fingerCount}`);
+    }
+    console.log(fingerCount);
 };
